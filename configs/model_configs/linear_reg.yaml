@@ -1,0 +1,6 @@
+model_class: Linear
+model_class_type: Regressor
+
+model_kwargs:
+  fit_intercept: true
+  

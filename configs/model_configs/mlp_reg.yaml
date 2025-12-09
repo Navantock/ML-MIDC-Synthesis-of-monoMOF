@@ -1,0 +1,39 @@
+model_class: MLP
+model_class_type: Regressor
+
+model_kwargs:
+  validation_fraction: 0.1
+  hidden_layer_sizes: [64, 64]
+  activation: relu
+  solver: adam
+  alpha: 0.01
+  batch_size: 16
+  learning_rate: adaptive
+  learning_rate_init: 0.001
+  power_t: 0.5
+  max_iter: 1200
+  shuffle: True
+  random_state: 42
+  tol: 0.001
+  verbose: False
+  warm_start: False
+  #early_stopping: True
+  #validation_fraction: 0.1
+  n_iter_no_change: 30
+
+model_search_params:
+  hidden_layer_sizes:
+    - [32, 32]
+    - [64, 64]
+    - [32, 32, 32]
+  batch_size:
+    - 4
+    - 8
+    - 16
+  learning_rate_init:
+    - 0.0001
+    - 0.001
+  alpha:
+    - 0.0001
+    - 0.001
+    - 0.01

@@ -1,0 +1,16 @@
+# To run prediction only, always set predict to True
+predict: True
+
+# Random Seed
+seed: 42
+
+# The directory to save your prediction results
+result_dir: ./test_pred
+# Whether to append timestamp to the result directory name
+result_dirname_with_time: False
+
+# Dataset configuration path
+dataset_config_path: ./configs/dataset_configs/predict_only.yaml
+# Training configuration path
+train_config_path: ./configs/train_configs/predict_only.yaml
+  

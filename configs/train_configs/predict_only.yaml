@@ -1,0 +1,5 @@
+model_load_path: ./models/classifier/all_random_svm/model.pkl
+predict_kwargs:
+  predict_ligand_input: ./dataset/ligands/ligands.sdf
+  predict_acid_input: ./dataset/acids/acids.sdf
+  sort_mol_input: False

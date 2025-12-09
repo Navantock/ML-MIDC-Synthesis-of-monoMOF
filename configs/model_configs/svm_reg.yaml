@@ -1,0 +1,39 @@
+model_class: SVM
+model_class_type: Regressor
+
+model_kwargs:
+  C: 1.0
+  tol: 0.01
+  kernel: rbf
+  gamma: auto
+
+model_search_params:
+  C:
+    - 0.01
+    - 0.1
+    - 0.2
+    - 0.3
+    - 0.4
+    - 0.5
+    - 0.6
+    - 0.7
+    - 0.8
+    - 0.9
+    - 1.0
+    - 1.2
+    - 1.4
+    - 1.6
+    - 1.8
+    - 2.0
+    - 2.5
+    - 3.0
+    - 4.0
+    - 5.0
+    - 10.0
+  gamma:
+    - auto
+    - scale
+  tol:
+    - 0.0001
+    - 0.001
+    - 0.01

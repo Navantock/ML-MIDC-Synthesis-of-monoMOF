@@ -1,0 +1,9 @@
+dataset_config_path: ./configs/dataset_configs/train_dataset.yaml
+evaluate: true
+model_config_path: ./configs/model_configs/svm.yaml
+predict: false
+result_dir: <your_result_dir>
+result_dirname_with_time: false
+seed: 42
+train: true
+train_config_path: ./configs/train_configs/train.yaml

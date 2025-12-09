@@ -1,0 +1,5 @@
+importance: null
+kfold: 5
+kfold_by_ligand: true
+use_kfold_model: true
+search_hyperparams: true

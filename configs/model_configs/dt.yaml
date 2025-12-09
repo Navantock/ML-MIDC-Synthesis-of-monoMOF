@@ -1,0 +1,32 @@
+model_class: DecisionTree
+model_class_type: Classifier
+
+model_kwargs:
+  criterion: gini
+  max_depth: null
+  max_leaf_nodes: null
+  min_samples_split: 3
+  min_samples_leaf: 1
+  min_weight_fraction_leaf: 0.0
+  random_state: 42
+  min_impurity_decrease: 0.0
+  class_weight: balanced
+
+model_search_params:
+  max_depth:
+    - null
+    - 4
+    - 6
+    - 8
+    - 10
+    - 12
+    - 14
+    - 16
+  min_samples_split:
+    - 2
+    - 3
+    - 4
+  min_samples_leaf:
+    - 1
+    - 2
+    - 3

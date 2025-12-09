@@ -1,0 +1,20 @@
+model_class: LASSO
+model_class_type: Regressor
+
+model_kwargs:
+  alpha: 0.02
+  fit_intercept: True
+  random_state: 42
+  positive: True
+
+model_search_params:
+  alpha:
+    - 0.001
+    - 0.005
+    - 0.01
+    - 0.02
+    - 0.03
+    - 0.04
+    - 0.05
+    - 0.1
+    - 0.2

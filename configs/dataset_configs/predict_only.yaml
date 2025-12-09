@@ -1,0 +1,13 @@
+dataset_class: descriptors_predict
+
+dataset_kwargs:
+  acid_desc_csv: ./dataset/acids/acid_descs.csv
+  ligand_desc_csv: ./dataset/ligands/ligand_descs.csv
+  acid_descriptor_method: acid_hybrid
+  ligand_descriptor_method: ligand_hybrid
+  acid_descriptor_kwargs:
+    acid_sp_dir: /mnt/data8T/wuhf/monoMOF-SynPred/qc_calc/acids_sp
+    acid_opt_dir: /mnt/data8T/wuhf/monoMOF-SynPred/qc_calc/acids_opt
+  ligand_descriptor_kwargs:
+    ligand_sp_dir: /mnt/data8T/wuhf/monoMOF-SynPred/qc_calc/ligands_sp
+    ligand_opt_dir: /mnt/data8T/wuhf/monoMOF-SynPred/qc_calc/ligands_opt

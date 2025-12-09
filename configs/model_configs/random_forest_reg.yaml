@@ -1,0 +1,44 @@
+model_class: RandomForest
+model_class_type: Regressor
+
+model_kwargs:
+  n_estimators: 5
+  criterion: squared_error
+  max_depth: 4
+  min_samples_split: 2
+  min_samples_leaf: 1
+  min_weight_fraction_leaf: 0.0
+  max_features: sqrt
+  max_leaf_nodes: null
+  min_impurity_decrease: 0.0
+  bootstrap: True
+  oob_score: False
+  n_jobs: 8
+  random_state: 42
+  verbose: 0
+  warm_start: False
+  bootstrap: True
+
+model_search_params:
+  n_estimators:
+    - 20
+    - 40
+    - 60
+    - 80
+    - 100
+  max_depth:
+    - 2
+    - 3
+    - 4
+    - 6
+    - 8
+    - 12
+    - 16
+  min_samples_split:
+    - 2
+    - 3
+    - 4
+  min_samples_leaf:
+    - 1
+    - 2
+    - 3
