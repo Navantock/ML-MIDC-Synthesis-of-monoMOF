@@ -36,7 +36,7 @@ conda install matplotlib
 
 ## 🚀 3 Run Prediction
 
-By utilizing our pre-trained models, you can replicate our prediction results or conduct synthetic design based on modulators/linkers with pre-computed descriptors.
+By utilizing our trained models, you can replicate our prediction results or conduct synthetic design based on modulators/linkers with pre-computed descriptors.
 
 ### 3.1 Prepare Modulators & Linkers SDF File
 
